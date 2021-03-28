@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main_profile">
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:src="@drawable/logout"
+        app:backgroundTint="@color/white"
+        app:elevation="40dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0"
+        android:layout_marginTop="15dp"
+
+        app:layout_constraintHorizontal_bias=".95"
+/>
+
+<!--    <Switch-->
+<!--        android:id="@+id/switch1"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0"-->
+<!--        android:layout_marginTop="300dp"-->
+<!--        android:text="state  "-->
+<!--        android:textOff="off"-->
+<!--        android:textOn="on"-->
+
+<!--        app:layout_constraintHorizontal_bias=".85"-->
+
+<!--        />-->
+
+    <Button
+        android:id="@+id/onbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttoncustom"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias=".8"
+        app:layout_constraintHorizontal_bias=".3"
+        android:text="@string/on"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        />
+
+    <Button
+        android:id="@+id/offbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttoncustom"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias=".8"
+        app:layout_constraintHorizontal_bias=".65"
+        android:text="@string/off"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        />
+
+
+<!--    -->
+<!--    <ToggleButton-->
+
+<!--        android:id="@+id/switch1"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        siz-->
+<!--        app:layout_constraintVertical_bias="0"-->
+<!--        android:layout_marginTop="300dp"-->
+
+<!--        app:layout_constraintHorizontal_bias=".85"/>-->
+<!--    -->
+
+<!--    <com.google.android.material.button.MaterialButtonToggleGroup-->
+
+<!--        android:id="@+id/switch1"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0"-->
+<!--        android:layout_marginTop="300dp"-->
+
+<!--        app:layout_constraintHorizontal_bias=".85"-->
+<!--        android:elevation="30dp"/>-->
+
+    <TextView
+        android:id="@+id/name"
+        android:textStyle="bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent=".5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias=".2"
+        app:layout_constraintVertical_bias=".2"
+        android:textSize="25sp"
+        />
+    <TextView
+        android:id="@+id/email"
+        android:textStyle="bold"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent=".7"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias=".2"
+        app:layout_constraintVertical_bias=".15"
+        android:textSize="20sp"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
